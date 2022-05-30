@@ -39,6 +39,13 @@ namespace HashTable
             myMapNode.Add("18", "situations");
             string hash14 = myMapNode.Get("14");
             Console.WriteLine("14th index value: " + hash14);
+            //display deliberately before removing
+            string hash17 = myMapNode.Get("17");
+            Console.WriteLine("17th index value: " + hash17);
+            myMapNode.Remove("17");
+            //display after removing
+            string removehash17 = myMapNode.Get("17");
+            Console.WriteLine("17th index value: " + removehash17);
             Console.ReadKey();
         }
     }
